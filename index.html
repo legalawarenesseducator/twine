@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9fafc;
+            background: linear-gradient(to bottom, #e8f5e9, #f1f8e9);
             color: #2c3e50;
         }
 
@@ -20,10 +20,12 @@
             color: white;
             padding: 20px 40px;
             text-align: center;
+            background-image: url('background-legal-theme.png');
+            background-size: cover;
         }
 
         header h1 {
-            font-size: 2em;
+            font-size: 2.5em;
             margin: 0;
             font-family: 'Georgia', serif;
         }
@@ -36,7 +38,7 @@
             color: white;
             text-decoration: none;
             margin: 0 10px;
-            font-size: 0.9em;
+            font-size: 1em;
         }
 
         nav a:hover {
@@ -46,15 +48,15 @@
         /* Main Content */
         main {
             margin: 30px auto;
-            max-width: 800px;
+            max-width: 900px;
             padding: 20px;
             background: white;
             border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
         main h2 {
-            font-size: 1.8em;
+            font-size: 2em;
             color: #1a5e20;
             border-bottom: 2px solid #c8e6c9;
             padding-bottom: 10px;
@@ -68,22 +70,32 @@
         }
 
         main ul li {
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 4px;
-            background-color: #f1f8e9;
-            border-left: 4px solid #2e7d32;
-            transition: background-color 0.3s;
+            margin: 15px 0;
+            padding: 12px;
+            border-radius: 8px;
+            background: #f1f8e9;
+            border-left: 6px solid #2e7d32;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s, background-color 0.3s;
         }
 
         main ul li:hover {
             background-color: #dcedc8;
+            transform: scale(1.02);
+        }
+
+        main ul li img {
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
         }
 
         main ul li a {
             text-decoration: none;
             color: #2e7d32;
             font-weight: bold;
+            font-size: 1.1em;
         }
 
         main ul li a:hover {
@@ -98,6 +110,8 @@
             background: #1a5e20;
             color: white;
             font-size: 0.9em;
+            background-image: url('footer-legal-theme.png');
+            background-size: contain;
         }
 
         footer a {
@@ -123,6 +137,12 @@
     <main>
         <h2>Explore the Stories</h2>
         <ul>
+            <li><img src="icon-scale.png" alt="Icon"><a href="#">Scenario 1: Disability Discrimination Ordinance</a></li>
+            <li><img src="icon-money.png" alt="Icon"><a href="#">Scenario 2: Mismanagement of Tour Fees</a></li>
+            <li><img src="icon-work.png" alt="Icon"><a href="#">Scenario 3: Engagement of Outside Paid Work</a></li>
+            <li><img src="icon-interview.png" alt="Icon"><a href="#">Scenario 4: Admission Interview Integrity</a></li>
+            <li><img src="icon-social.png" alt="Icon"><a href="#">Scenario 5: Improper remarks on social media</a></li>
+            <li><img src="icon-justice.png" alt="Icon"><a href="#">Scenario 6: Defamatory Remarks on Different Races</a></li>
             <li><a href="s1-disability-discrimination-ordinance.html">Scenario 1: Disability Discrimination Ordinance</a></li>
             <li><a href="s2-mismanagement-tour-fees-students.html">Scenario 2: Mismanagement of Tour Fees</a></li>
             <li><a href="s3-engagement-outside-paid-work.html">Scenario 3: Engagement of Outside Paid Work</a></li>
